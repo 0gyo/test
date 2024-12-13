@@ -13,13 +13,7 @@ export default function Home() {
         alt="Test PNG"
         width={testPng.width / 4}
         height={testPng.height / 4}
-        style={{
-          imageRendering: 'pixelated',
-          WebkitFontSmoothing: 'antialiased',
-          objectFit: 'contain',
-          transform: 'translateZ(0)',
-          backfaceVisibility: 'hidden'
-        }}
+
       />
     </main>
   );
