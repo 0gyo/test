@@ -1,4 +1,4 @@
-import testSvg from "./assets/test.svg";
+import testPng from "./assets/test.png";
 
 export default function Home() {
   return (
@@ -9,10 +9,17 @@ export default function Home() {
       justifyContent: 'center'
     }}>
       <img
-        src={testSvg.src}
-        alt="Test SVG"
-        width={testSvg.width}
-        height={testSvg.height}
+        src={testPng.src}
+        alt="Test PNG"
+        width={testPng.width / 4}
+        height={testPng.height / 4}
+        style={{
+          imageRendering: 'pixelated',
+          WebkitFontSmoothing: 'antialiased',
+          objectFit: 'contain',
+          transform: 'translateZ(0)',
+          backfaceVisibility: 'hidden'
+        }}
       />
     </main>
   );
