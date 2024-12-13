@@ -1,4 +1,3 @@
-import Image from "next/image";
 import testSvg from "./assets/test.svg";
 
 export default function Home() {
@@ -9,7 +8,7 @@ export default function Home() {
       alignItems: 'center',
       justifyContent: 'center'
     }}>
-      <Image
+      <img
         src={testSvg.src}
         alt="Test SVG"
         width={testSvg.width}
